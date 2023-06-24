@@ -1,0 +1,104 @@
+/* ------------navbar Styling----------- */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+navbar ul {
+  display: flex;
+  background-color: black;
+  justify-content: space-evenly;
+}
+
+.nav-items {
+  padding: 2%;
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+}
+
+/* -----------Clock styling----------- */
+#clockContainer {
+  width: 40vw;
+  height: 40vw;
+  /* background-color: red; */
+  background-image: url("clock.jpg");
+  background-size: 100%;
+  margin: auto;
+}
+
+#hour {
+  height: 20%;
+  width: 1.5%;
+  background-color: black;
+  position: relative;
+  top: 28%;
+  left: 48.5%;
+  border-radius: 4px;
+  transform-origin: bottom;
+  /* display: none; */
+}
+
+#minute {
+  height: 28%;
+  width: 1.3%;
+  background-color: black;
+  position: relative;
+  border-radius: 4px;
+  transform-origin: bottom;
+  top: 1%;
+  left: 48.7%;
+}
+
+#second {
+  height: 35%;
+  width: 1.1%;
+  background-color: red;
+  position: relative;
+  border-radius: 4px;
+  transform-origin: bottom;
+  top: -34%;
+  left: 48.7%;
+}
+
+#center-circ {
+  background-color: black;
+  height: 5%;
+  width: 5%;
+  border-radius: 50%;
+  position: relative;
+  bottom: 37%;
+  left: 46.6%;
+}
+
+/* ----------StopWatch Styling------------- */
+.stopWatch{
+  border: 2px solid red;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+  margin: 5%;
+  font-size: 400%;
+}
+
+#timer{
+  font-size: 400%;
+  margin: 30px;
+}
+
+#pause, #reset, #continue{
+  display: none;
+}
+
+button{
+  background-color: green;
+  color: white;
+  padding: 1.2%;
+  font-size: 120%;
+  border-radius: 10px;
+}
