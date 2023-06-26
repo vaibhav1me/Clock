@@ -21,7 +21,7 @@ const start = () => {
       (timePassed - stopHours * 3600 - ((timePassed - stopHours * 3600) % 60)) /
       60;
     stopSeconds = timePassed - stopHours * 3600 - stopMinutes * 60;
-    timer.innerText = stopHours + ":" + stopMinutes + ":" + stopSeconds;
+    time.innerText = stopHours + ":" + stopMinutes + ":" + stopSeconds;
   }, 1000);
   document.getElementById("start").style.display = "none";
   document.getElementById("pause").style.display = "inline";
@@ -37,7 +37,7 @@ const pause = () => {
 
 const reset = () => {
   timePassed = 0;
-  timer.innerText = 0 + ":" + 0 + ":" + 0;
+  time.innerText = 0 + ":" + 0 + ":" + 0;
   document.getElementById("start").style.display = "inline";
   document.getElementById("reset").style.display = "none";
   document.getElementById("continue").style.display = "none";
@@ -61,7 +61,7 @@ const Continue = () => {
       ((timePassed+timePassedNew) - stopHours * 3600 - ((timePassed + timePassedNew - stopHours * 3600) % 60)) /
       60;
     stopSeconds = timePassed + timePassedNew - stopHours * 3600 - stopMinutes * 60;
-    timer.innerText = stopHours + ":" + stopMinutes + ":" + stopSeconds;
+    time.innerText = stopHours + ":" + stopMinutes + ":" + stopSeconds;
   }, 1000);
   document.getElementById("pause").style.display = "inline";
   document.getElementById("reset").style.display = "none";

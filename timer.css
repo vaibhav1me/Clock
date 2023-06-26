@@ -1,0 +1,15 @@
+/* --------------- Timer Styling ---------------- */
+#timer{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+.timer-heading{
+    text-align: center;
+    margin: auto;
+    padding: 2%;
+    font-size: 300%;
+}

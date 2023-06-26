@@ -1,0 +1,28 @@
+/* ----------StopWatch Styling------------- */
+.stopWatch{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h1{
+    margin: 5%;
+    font-size: 400%;
+  }
+  
+  #time{
+    font-size: 400%;
+    margin: 30px;
+  }
+  
+  #pause, #reset, #continue{
+    display: none;
+  }
+  
+  button{
+    background-color: green;
+    color: white;
+    padding: 1.2%;
+    font-size: 120%;
+    border-radius: 10px;
+  }
